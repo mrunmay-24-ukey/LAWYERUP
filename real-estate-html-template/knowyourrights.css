@@ -1,0 +1,72 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply some basic styles to improve readability */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.rights-content {
+    text-align: left;
+}
+
+.rights-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.right-item {
+    flex: 0 0 calc(50% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #97793b;
+    color: #fff;
+    border-radius: 5px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.right-item:hover {
+    background-color: #97793b;
+}
+
+.right-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.right-item p {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .right-item {
+        flex-basis: calc(100% - 20px);
+    }
+}
